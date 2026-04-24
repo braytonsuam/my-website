@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Wild Tanzania Tours</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="folder/light.png" alt="Logo" class="logo-img">
+        <h1 class="logo-text">Summer Wild Tanzania Tours 🌍</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')" class="active">Home</a></li>
+        <li><a href="#" onclick="showSection('destinations')">Destinations</a></li>
+        <li><a href="#" onclick="showSection('itinerary')">Itinerary/Programs</a></li>
+        <li><a href="#" onclick="showSection('Book Your Safari ')">Book Your Safari</a></li>
+    </ul>
+</nav>
+
+<!-- ===== HOME ===== -->
+
+<section id="home" class="content-section">
+    <h2>Explore the Beauty of Tanzania 🌍</h2>
+    <p>Unforgettable safaris, crystal beaches, and adventure tours.</p>
+    <a href="https://wa.me/255626552784?text=Hello%20Suma%20Safari%20Tours!" class="btn" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<!-- ===== DESTINATIONS ===== -->
+
+<section id="destinations" class="content-section" style="display:none;">
+    <h2>Popular Destinations 🌍</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="pcture/vick.png" alt="Serengeti">
+            <h3>Serengeti National Park</h3>
+            <p>Witness the Great Migration and Africa’s wild beauty.</p>
+        </div>
+        <div class="card">
+            <img src="folder/dw.jpg" alt="Zanzibar">
+            <h3>Zanzibar Islands</h3>
+            <p>Relax on white beaches and experience rich Swahili culture.</p>
+        </div>
+        <div class="card">
+            <img src="folder/sx.jpg" alt="Kilimanjaro">
+            <h3>Mount Kilimanjaro</h3>
+            <p>Climb Africa’s highest mountain and enjoy stunning views.</p>
+        </div>
+        <div class="card">
+          <img src="folder/vistors.jpg" alt="Mikumi national park">
+          <h3>Mkomazi national park</h3>
+          <p>Be part of traveling at the Mkomazi national park</p>
+        </div>
+        <div class="card">
+          <img  src="pcture/dw.jpeg" alt="Tarangire national park">
+          <h3>Tarangire national park</h3>
+          <p>Enjoys the natural Wildlife nature</p>
+        </div>
+        <div class="card">
+          <img src="folder/js.jpg" alt="Ngorongoro national park">
+          <h3>Ngorongoro national park</h3>
+          <p>Love is anywhere even Lions printed it</p>
+        </div>
+
+        <div class="card">
+        <video class="card-video" controls preload="metadata">
+           <source src="folder/zanzibar.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+        </video>
+           <h3>Zanzibar Beach</h3>
+           <p>Feel the Ocean</p>
+        </div>
+
+        <div class="card">
+        <video class="card-video" controls preload="metadata">
+           <source src="pcture/cw.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+        </video>
+           <h3>Serenget National Park</h3>
+           <p>Enjoy the beatiful Nature</p>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- ===== ITINERARY ===== -->
+
+<section id="itinerary" class="content-section" style="display:none;">
+    <h2>Choose Your Safari Duration</h2>
+    <label for="safariDays">Select Duration:</label>
+    <select id="safariDays">
+        <option value="">-- Select --</option>
+        <option value="form2">2 days</option>
+        <option value="form4">4 days</option>
+        <option value="form7">7 Days</option>
+        <option value="form14">14 Days</option>
+        <option value="form21">21 Days</option>
+        <option value="form30">30 Days</option>
+        <option value="form60">60 Days</option>
+        <option value="form90">90 Days</option>
+    </select>
+
+    <!-- Generate Forms -->
+
+<div id="forms-container">
+<form class="safariForm" id="form2" style="display:none;">
+            <h3><b>2 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+             <ul>
+               <li>Serengeti National Park</li>
+             </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Four Seasons Safari Lodge</li>
+               <li>Serengeti and Lobo Wildlife Lodge</li>
+             </ul>
+            </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Lions</li>
+                <li>Leopards</li>
+                <li>Elephants</li>
+                <li>Buffalos and</li>
+                <li>Massai culture</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+  <form class="safariForm" id="form4" style="display:none;">
+            <h3><b>4 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+              <ul>
+                <li>Ngorongoro National Park</li>
+                </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Ngorongoro Serena Safari Lodge</li>
+               <li>Ngorongoro Wildlife Lodge</li>
+               </ul>
+           </p>
+           </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Rhinos</li>
+                <li>Hyenas</li>
+                <li>Elephants</li>
+                <li>Lions</li>
+                <li>Buffalos and n.k</li>
+                <li>Massai culture</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+
+        <form class="safariForm" id="form7" style="display:none;">
+            <h3><b>7 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+             <ul>
+               <li>Serengeti National Park</li>
+             </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Four Seasons Safari Lodge</li>
+               <li>Serengeti and Lobo Wildlife Lodge</li>
+             </ul>
+            </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Lions</li>
+                <li>Leopards</li>
+                <li>Elephants</li>
+                <li>Buffalos and n.k</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+        <form class="safariForm" id="form14" style="display:none;">
+            <h3><b>14 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park Name:</b></h3>
+              <ul>
+                <li>Ngorongoro Consavation Area</li>
+              </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Ngorongoro Serena Safari Lodge</li>
+               <li>Ngorongoro Wildlife Lodge</li>
+             </ul>
+            </p>
+            </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Rhinos</li>
+                <li>Hyenas</li>
+                <li>Elephants</li>
+                <li>Lions</li>
+                <li>Buffalos and n.k</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+
+        <form class="safariForm" id="form21" style="display:none;">
+            <h3><b>21 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+              <ul>
+                <li>Tarangire National Park</li>
+              </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Tarangire Serena Safari Lodge</li>
+               <li>Tarangire Treetops</li>
+             </ul>
+            </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Lions</li>
+                <li>Leopards</li>
+                <li>Elephants</li>
+                <li>Baobab Trees</li>
+                <li>Buffalos</li>
+                <li>Zebras</li>
+                <li>Giraffes</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+        <form class="safariForm" id="form30" style="display:none;">
+            <h3><b>30 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+              <ul>
+                <li>Lake Manyara National Park</li>
+                <li>Tarangire National Park</li>
+              </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Lake Manyara Serena Safari Lodge</li>
+               <li>Escarpment Luxury Lodge </li>
+             </ul>
+            </p>
+          </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Lions</li>
+                <li>Trees Climbing Lions</li>
+                <li>Elephants</li>
+                <li>Buffalos and n.k</li>
+                <li>Baboons</li>
+                <li>Flamingos</li>
+                <li>Hippos</li>
+                <li></li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+        <form class="safariForm" id="form60" style="display:none;">
+            <h3><b>60 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+              <ul>
+                <li>Ruha National Park</li>
+                <li>Nyerere  National Park (Formerly)</li>
+              </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Ruha River Lodge</li>
+               <li>Mwagusi Safari Camp</li>
+               <li>Azura Selous Lodge</li>
+               <li>Beho Beho Lodge</li>
+             </ul>
+            </p>
+            </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Lions</li>
+                <li>Leopards</li>
+                <li>Elephants</li>
+                <li>Africa wild dogs</li>
+                <li>Zebras</li>
+                <li>Buffalos and n.k</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+
+        <form class="safariForm" id="form90" style="display:none;">
+            <h3><b>90 Days Safari Inquiry:-</b></h3>
+            <h3><b>Park name:</b></h3>
+              <ul>
+                <li>Mikumi National Park</li>
+                <li>Saadan National Park (Formerly)</li>
+                <li>Gombe Stream National Park</li>
+              </ul>
+            <h3><b>Lodges:-</b></h3>
+            <p>
+             <ul>
+               <li>Mikumi safari Lodge </li>
+               <li>Foxes mikumi safari Lodge</li>
+               <li>Simply saadan Camp</li>
+               <li>Camp seluu</li>
+               <li>Gombe forest Lodge</li>
+               <li>Tembo Beach Camp</li>
+               <li></li>
+             </ul>
+           </p>
+           </p>
+            <h3><b>Wildlife You can See Animal such as:-</b></h3>
+            <p>
+             <ul>
+                <li>Lions</li>
+                <li>Giraffes</li>
+                <li>Babooms</li>
+                <li>Chimpanzees</li>
+                <li>Vervet monkeys</li>
+                <li>Cape Buffalos</li>
+                <li>Hippos</li>
+                <li>Green turtles</li>
+                <li>Buffalos and n.k</li>
+             </ul>
+            </p>
+            <label>Name:</label><input type="text" required>
+            <label>Email:</label><input type="email" required>
+            <label>Message:</label><textarea required></textarea>
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- ===== Book Your Safari  ===== -->
+
+<section id="Book Your Safari " class="content-section" style="display:none;">
+    <h2>Contact Us 🌍</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/255626552784" target="_blank">Chat with us</a></p>
+    <p>📧 Email: <a href="mailto:sumabrayton0203@gmail.com">sumabrayton0203@gmail.com</a></p>
+
+    <h3>Book Your Safari 🌍</h3>
+    <form id="bookingForm">
+        <label>Visit Date & Time:</label>
+        <input type="datetime-local" name="visitDateTime" required>
+        <label>Fill National Park you want to Visit:</label>
+        <input type="text" name="parks" required placeholder="e.g. Serengeti, Ngorongoro">
+        <label>Days to Stay:</label>
+        <input type="number" name="days" min="1" required>
+        <label>Write Full Name:</label>
+        <input type="text" name="fullName" required>
+        <label>Your Country:</label>
+        <input type="text" name="country" required>
+        <label>Are you traveling?</label><br>
+        <input type="radio" id="alone" name="travelType" value="alone">
+        <label for="alone">Alone</label><br>
+
+<input type="radio" id="group" name="travelType" value="group">
+<label for="group">With a group</label>
+        <label>Please provide the names and ages of everyone joining the tour:</label>
+        <textarea name="familyInfo"></textarea>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+        <button type="submit" class="btn">Send Booking via WhatsApp & Email</button>
+    </form>
+</section>
+
+<<footer>
+    <div class="footer-box">
+        © 2025 Summer Wild Tanzania Tours. All Rights Reserved.
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/255626552784" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="Chatwhatsapp-icon">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
